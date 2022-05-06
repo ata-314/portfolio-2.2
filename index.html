@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio particles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="l-header">
+
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">By.Soylu</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link ">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link ">Portfolio</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link ">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link ">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div>
+                    <img src="img/font.gif" class="gif" alt="">
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-chevron-up'></i>Aşağı Kaydır</a>
+                </div>
+                <canvas id="canvas1"></canvas>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class=" about__container bd-grid">
+                <div class="about__img">
+                    <img src="img/profil fotosu.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Ben Ataberk Soylu</h2>
+                    <span class="about__profession">Multi Designer</span>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                        laboriosam asperiores error ab laborum corrupti temporibus saepe, soluta quo similique nostrum
+                        voluptas laudantium. Rem sequi atque iure omnis odio!</p>
+
+                    <div class="about__social">
+                        <a href="#" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="about__social-icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="about__social-icon"><i class='bx bxl-dribbble'></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="wrapper">
+                <!-- filter Items -->
+                <nav>
+                    <div class="items">
+                        <span class="item active" data-name="all">All</span>
+                        <span class="item" data-name="font">font</span>
+                        <span class="item" data-name="shoe">Shoe</span>
+                        <span class="item" data-name="watch">Watch</span>
+                        <span class="item" data-name="camera">Camera</span>
+                        <span class="item" data-name="headphone">Headphone</span>
+                    </div>
+                </nav>
+                <!-- filter Images -->
+                <div class="gallery">
+                    <div class="image" data-name="font"><span><img src="img/font.gif" alt=""></span></div>
+                    <div class="image" data-name="headphone"><span><img src="img/headphone-1.jpg" alt=""></span>
+                    </div>
+                    <div class="image" data-name="camera"><span><img src="img/camera-1.jpg" alt=""></span></div>
+                    <div class="image" data-name="shoe"><span><img src="img/shoe-1.jpg" alt=""></span></div>
+                    <div class="image" data-name="headphone"><span><img src="img/headphone-2.jpg" alt=""></span>
+                    </div>
+                    <div class="image" data-name="watch"><span><img src="img/watch-1.jpg" alt=""></span></div>
+                    <div class="image" data-name="shoe"><span><img src="img/shoe-2.jpg" alt=""></span></div>
+                    <div class="image" data-name="camera"><span><img src="img/camera-2.jpg" alt=""></span></div>
+                </div>
+            </div>
+            <!-- fullscreen img preview box -->
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title">Detaylar<p></p></span>
+                    <span class="icon fas fa-times"><i class='bx bx-x'></i></span>
+                </div>
+                <div class="image-box"><img src="" alt=""></div>
+            </div>
+            <div class="shadow"></div>
+
+            <script src="js/scriptt.js"></script>
+
+
+        </section>
+
+        <!--===== SKILLS =====-->
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Programs</h3>
+                    <span class="skills__name">Figma</span>
+                    <span class="skills__name">Adobe XD</span>
+                    <span class="skills__name">Visual Studio</span>
+                    <span class="skills__name">Touch Designer</span>
+                    <span class="skills__name">Houdini</span>
+                    <span class="skills__name">Photoshop</span>
+                    <span class="skills__name">İllustrator</span>
+                    <span class="skills__name">After Effect</span>
+                    <span class="skills__name">Premier Pro</span>
+                    <span class="skills__name">İndesign</span>
+
+                    <h3 class="skills__subtitle">Design</h3>
+                    <span class="skills__name">UI/UX</span>
+                    <span class="skills__name">Web Design</span>
+                    <span class="skills__name">Generative Art</span>
+                    <span class="skills__name">Animation</span>
+                    <span class="skills__name">Motion Graphic</span>
+                    <span class="skills__name">İllüstration</span>
+                    <span class="skills__name">Poster Design</span>
+                    <span class="skills__name">Logo Design</span>
+
+                    <h3 class="skills__subtitle">Web Development</h3>
+                    <span class="skills__name">Html</span>
+                    <span class="skills__name">Css</span>
+                    <span class="skills__name">Javascript</span>
+                </div>
+
+                <div class="skills__img">
+                    <img src="/img/skill.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+
+          <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">info.mail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+90 999-999</span>
+
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text">My contry</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+    </main>
+
+ <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">ATABERK SOYLU</h2>
+                    <p class="footer__text">Ataberk Soylu's personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
